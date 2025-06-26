@@ -1,3 +1,5 @@
 japanese+credit+screening/
 venv/
+aws/
 *.xlsx
+unzip awscliv2.zip
