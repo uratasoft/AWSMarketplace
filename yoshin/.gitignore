@@ -1,5 +1,5 @@
 japanese+credit+screening/
-venv/
+myenv/
 aws/
 *.xlsx
 unzip awscliv2.zip

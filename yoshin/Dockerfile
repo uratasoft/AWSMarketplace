@@ -11,7 +11,10 @@ RUN apt-get update && apt-get install -y libgomp1
 COPY . /app
 
 # 必要なPythonパッケージをインストール（pipアップグレード込み）
-RUN pip install --no-cache-dir flask numpy pandas lightgbm scikit-learn
+#RUN pip install --no-cache-dir flask numpy pandas lightgbm scikit-learn
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 5000
 
 # Flaskアプリの起動
 CMD ["python", "predict.py"]
